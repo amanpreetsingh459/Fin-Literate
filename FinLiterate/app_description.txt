@@ -1,0 +1,24 @@
+Financial Literacy App Powered by LLMs (FinLiterate)
+
+Problem: Financial illiteracy is a widespread problem, with many people lacking the knowledge and skills to manage their money effectively. This can lead to poor financial decisions, debt accumulation, and difficulty achieving financial goals.
+
+Solution: FinLiterate app powered by LLMs addresses this problem by providing personalized, accessible, and engaging financial education.
+
+The app provides 2 key features:
+1. Personalized Financial Coach
+2. Interactive Financial Learning
+
+Working:-
+- The app gathers the below information from the user to understand their financial profile
+	- financial_situation
+	- financial_goals
+	- risk_tolerance
+	- Other open-ended and/or additional questions
+- Based on above data the app creates a personalized financial guide for the specific user and then answers the user's queries accordingly.
+- Additionally based on the above information the app prepares a personalized interactive quiz with the goal of enabling users to make informed decisions about their financial well-being. And in-turn achieving their financial goals.
+
+How Gemini API was used:-
+- In one sentence: "~80% of the tasks from idea generation to synthetic data generation to writing code are done with the help of Gemini API".
+- Below is the first prompt that gave the idea:
+	- Give me an idea which i can use to build a financial app using llms to solve a major problem
+- Then based on its response kept building the app step-by-step

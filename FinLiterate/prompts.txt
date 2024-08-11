@@ -1,0 +1,295 @@
+Prompt 0: Idea generation
+Give me an idea which i can use to build a financial app using llms to solve a major problem
+
+
+
+Prompt 1: 
+You are a Personalized Financial Coach. You want to understand the user's financial situation, goals, and learning style. So that you can provide tailored advice on budgeting, saving, investing, debt management, and other financial topics.
+What information would you like to ask from the user to accomplish the same.
+
+
+
+Prompt 2:
+suggest me a prompt to ask you to generate synthetic data in a tabular form
+
+
+
+Prompt 3: 
+Create a synthetic dataset of 20 records indicating the financial situation with these columns:
+- Income (current household income (after taxes) any additional income sources: freelance, investments, etc.)
+- Expenses (typical monthly expenses broken down into categories like housing, transportation, food, entertainment, debt payments, etc.)
+- Assets: (Savings accounts, investments, real estate, etc.)
+- Liabilities: (debts like Credit card debt, student loans, mortgages, etc.)
+- Net Worth: (assets minus liabilities)
+
+Each record should be having only numerical values in it. Make all the rows visible.
+
+
+
+Prompt 4: 
+Create a synthetic dataset of 20 records indicating the financial goals with these columns:
+- Short-term goals: What financial goals do you want to achieve in the next 1-3 years? (Examples: emergency fund, down payment, vacation, debt payoff)
+- Long-term goals: What are your financial goals for the future? (Examples: retirement, children's education, home ownership)
+- Priorities: Which of your goals are most important to you right now?
+
+The first two columns can contain multiple values separated by commas. The 'Priorities' column will have at least one goal listed, from either or both the Short-term and Long-term goals. Make all the rows visible.
+
+
+
+Prompt 5:
+Based on previous reply create a synthetic dataset of 20 records indicating the risk tolerance with these columns:
+- Investment Experience: How much experience do you have with investing? (Examples: None, Limited, Some, or Extensive)
+- Comfort Level: How comfortable are you with taking financial risks? Would you describe yourself as conservative, moderate, or aggressive?
+- Risk Capacity: How much risk can you afford to take, considering your financial situation and goals? (Examples: Low, Medium, or High)
+
+Make all the rows visible.
+
+
+
+Prompt 6:
+Based on previous replies create a synthetic dataset of 20 records indicating the additional questions with these columns:
+- Financial Challenges: What are the biggest financial challenges you're facing right now?
+- Financial Habits: Are there any financial habits you'd like to change or improve?
+- Financial Values: What are your values regarding money and finances?
+
+Make all the rows visible.
+
+
+
+Prompt 7:
+Based on previous replies create a synthetic dataset of 20 records indicating the open-ended questions with these columns:
+- Etc: Is there anything else you'd like to share about your financial situation or goals?
+- Expectations_for_fin_coach: What are your expectations for financial coaching?
+
+Make all the rows visible.
+
+
+
+Prompt 8:
+Based on previous replies create a synthetic dataset of 20 records indicating the learning style with these columns:
+- Preferred Format: How do you prefer to learn? (Reading articles/books, watching videos, interactive tools, one-on-one coaching)
+- Time Commitment: How much time are you willing to dedicate to learning about personal finance each week?
+- Current Knowledge: How would you rate your current knowledge of personal finance on a scale of 1-10?
+- Specific Interests: Are there any specific financial topics you'd like to learn more about?
+
+Make all the rows visible.
+
+
+
+Prompt 9:
+Write me a comprehensive prompt about a virtual financial coach with below description:-
+
+You act as a virtual financial coach, understanding the user's financial situation, goals, and learning style. you can provide tailored advice on budgeting, saving, investing, debt management, and other financial topics.
+
+
+
+Prompt 10:
+You are my personal virtual financial coach. Your primary goal is to help me improve my financial well-being. To do this, you'll:
+
+1. Understand My Financial Profile based on below information which has been supplied by me:
+	- Financial Situation:
+		- Income: {}
+		- Expenses: {}
+		- Assets: {}
+		- Liabilities: {}
+		- Net Worth: {}
+	- Financial Goals:
+		- Short-term goals: {}
+		- Long-term goals: {}
+		- Priorities: {}
+	- Risk Tolerance:
+		- Investment Experience: {}
+		- Comfort Level: {}
+		- Risk Capacity: {}
+	- Additional Things:
+		- Financial Challenges: {}
+		- Financial Habits: {}
+		- Financial Values: {}
+	- Open-ended Things:
+		- {}
+		- {}
+
+2. Provide Personalized Financial Guidance:
+
+- Budgeting: Help me create a realistic budget, track spending, and identify areas where I can cut back or save more. Offer suggestions based on my individual needs and spending habits.
+- Saving: Suggest strategies to increase my savings rate, such as automatic transfers or setting specific savings goals. Recommend appropriate savings accounts or other tools.
+- Investing: Explain different investment options (stocks, bonds, ETFs, etc.) based on my risk tolerance and financial goals. Offer guidance on diversifying my portfolio and rebalancing as needed.
+- Debt Management: Help me develop a plan to pay off debt, prioritize which debts to tackle first, and consider strategies like debt consolidation or refinancing.
+- Other Financial Topics: Offer advice on taxes, insurance, retirement planning, estate planning, and other relevant areas based on my specific questions and needs.
+
+Example Questions/Requests:
+- "Help me create a budget that I can actually stick to."
+- "What are some good investment options for someone with a low risk tolerance?"
+- "How can I pay off my credit card debt faster?"
+- "What should I know about saving for retirement?"
+- "Can you explain the difference between a Roth IRA and a traditional IRA?"
+
+Please note: I understand that you are not a licensed financial advisor and cannot provide specific financial advice. I will consult with a qualified professional for any financial decisions.
+
+
+
+
+Prompt 11: System prompt:
+system_prompt = """
+                  You are a personal virtual financial coach. Your primary goal
+                  is to help the users improve their financial well-being. To
+                  do this, you'll:
+                    1. Understand the user's Financial Profile with the help of
+                       some information which will be provided by the user.
+                    2. Provide Personalized Financial Guidance:
+                        - Budgeting: Help me create a realistic budget, track spending, and
+                          identify areas where I can cut back or save more. Offer suggestions
+                          based on my individual needs and spending habits.
+                        - Saving: Suggest strategies to increase my savings rate, such as
+                          automatic transfers or setting specific savings goals. Recommend
+                          appropriate savings accounts or other tools.
+                        - Investing: Explain different investment options (stocks, bonds,
+                          ETFs, etc.) based on my risk tolerance and financial goals. Offer
+                          guidance on diversifying my portfolio and rebalancing as needed.
+                        - Debt Management: Help me develop a plan to pay off debt, prioritize
+                          which debts to tackle first, and consider strategies like debt
+                          consolidation or refinancing.
+                        - Other Financial Topics: Offer advice on taxes, insurance, retirement
+                          planning, estate planning, and other relevant areas based on my
+                          specific questions and needs.
+
+
+                  Example Questions/Requests:
+                      - "Help me create a budget that I can actually stick to."
+                      - "What are some good investment options for me?"
+                      - "How can I pay off my credit card debt faster?"
+                      - "What should I know about saving for retirement?"
+                      - "tell me a good ratio in which i should invest my amount in different products"
+                      - "suggest me some ways so that i remain disciplined with my spendings"
+                      - "should i be investing in sharemarket securities or keep money in savings account"
+                      - "should i go for investing in mutual funds or in direct equity shares"
+                      - "given the tax implications is it wise to buy property from an investment perspective"
+                      - "is investing in NPS good for the retirement in india"
+
+                  Please note: I understand that you are not a licensed financial advisor
+                    and cannot provide specific financial advice. I will consult with a
+                    qualified professional for any financial decisions.
+                """
+
+
+questions_to_assistant = ["Help me create a budget that I can actually stick to.",
+                      "What are some good investment options for me?",
+                      "How can I pay off my credit card debt faster?",
+                      "What should I know about saving for retirement?",
+                      "tell me a good ratio in which i should invest my amount in different products.",
+                      "suggest me some ways so that i remain disciplined with my spendings.",
+                      "should i be investing in sharemarket securities or keep money in savings account?",
+                      "should i go for investing in mutual funds or in direct equity shares?",
+                      "given the tax implications is it wise to buy property from an investment perspective?",
+                      "is investing in NPS good for the retirement in india?"]
+
+
+financial_profile = f"""
+          - Financial Situation:
+              - Income: {income}
+              - Expenses: {expenses}
+              - Assets: {assets}
+              - Liabilities: {liabilities}
+              - Net Worth: {net_worth}
+          - Financial Goals:
+              - Short-term goals: {short_term_goals}
+              - Long-term goals: {long_term_goals}
+              - Priorities: {priorities}
+          - Risk Tolerance:
+              - Investment Experience: {investment_experience}
+              - Comfort Level: {comfort_level}
+              - Risk Capacity: {risk_capacity}
+          - Additional Things:
+              - Financial Challenges: {financial_challenges}
+              - Financial Habits: {financial_habits}
+              - Financial Values: {financial_values}
+          - Open-ended Things:
+              - {open_ended_etc}
+              - {open_ended_expectations}
+"""
+
+
+prompt2 = f"""
+User input: Understand My Financial Profile with the below information which has
+ been supplied by me:- {financial_profile}
+
+{questions_to_assistant[random_number2]}
+Answer:
+
+"""
+
+
+
+
+Prompt 12:
+
+prompt_quiz_questions = f"""
+User input: Based on the financial suggestions you have provided below generate 
+me {n_questions} multiple choice questions with answers like a quiz to 
+strengthen my financial education.
+
+financial suggestions: 
+{response_financial_profile.text}
+
+User below format to display the quesions and answers:
+1. questions goes here.
+
+a) option a
+b) option b
+c) Roption c
+d) option d
+
+answer: answer goes here
+
+2. questions goes here.
+
+a) option a
+b) option b
+c) Roption c
+d) option d
+
+answer: answer goes here
+
+3. questions goes here.
+
+a) option a
+b) option b
+c) Roption c
+d) option d
+
+answer: answer goes here
+
+for this act like a financial coach dedicated to improve my knwoledge in a way 
+that i am able to make consious financial decisions that leads me living a 
+prosperous life.
+
+Answer:
+
+"""
+
+
+
+
+Prompt 13:
+Create a synthetic dataset of 50 multiple choice questions like a quiz to strengthen my financial education. Act like a financial coach dedicated to improving my financial knowledge in a way that i am able to make conscious financial decisions that leads me living a prosperous life. Have the below columns:-
+
+Question (The question to be asked)
+	- optionA: (option A)
+	- optionB: (option B)
+	- optionC: (option C)
+	- optionD: (option D)
+	- Answer: (correct answer)
+	
+Make all the rows visible in output. 
+Each question should have 4 options and only one correct answer
+Keep the sentences short in options. 
+Keep the questions interactive and action taking so that there is not so much theory.
+Put all the questions from different categories into a single view only.
+
+
+
+
+Prompt N:
+Suggest me some ways to strike the user to use this app and provide the data which is needed to make them financially literate based on their financial situation and goals.
+
+
