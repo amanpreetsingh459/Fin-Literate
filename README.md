@@ -48,7 +48,7 @@ By leveraging the power of LLMs, this financial literacy app can revolutionize t
 - pip install -r requirements.txt
 
 #### Run the app
-1. Input your API key ([Manage your keys here](https://aistudio.google.com/app/apikey?utm_source=gais&utm_medium=email&utm_campaign=flash)) to access Gemini flash(line #31 in app.py)
+1. Input your API key ([Manage your keys here](https://aistudio.google.com/app/apikey?utm_source=gais&utm_medium=email&utm_campaign=flash)) to access Gemini flash(line #31 in FinLiterate/app.py)
 2. python app.py
 3. Input a financial query which you want to be answered or just enter to be set to a default one
 4. The suggestions will appear in text and the quiz will get launched. Click the public URL to access the same
